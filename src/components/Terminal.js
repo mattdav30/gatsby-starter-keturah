@@ -19,7 +19,7 @@ class Terminal extends Component {
  componentDidMount() {
       setTimeout(() => {
         window.location.replace(`/about`)
-      }, 28000);
+      }, 9000);
     }
   
 
@@ -91,7 +91,7 @@ class Terminal extends Component {
           </div>
         </Delay>
         
-        <Delay wait={2000}>
+        <Delay wait={7000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
             Sign In (Yes / No): &nbsp;
