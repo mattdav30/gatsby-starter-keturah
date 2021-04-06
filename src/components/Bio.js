@@ -1,5 +1,5 @@
 import React from "react"
-import picture from "../images/about-picture.jpg"
+import picture from "../images/about-picture.jpeg"
 
 class Bio extends React.Component  {
   render(){
