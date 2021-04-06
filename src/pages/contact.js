@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Nav from "../components/Nav"
 import Contact from "../components/Contact"
 
-class ContactPage extends Component {
+class Contact extends Component {
   constructor() {
     super();
     this.state = {
@@ -50,4 +50,4 @@ class ContactPage extends Component {
 }
 
 
-export default ContactPage;
+export default Contact;
