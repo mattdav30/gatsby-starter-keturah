@@ -2,7 +2,7 @@ import React from "react"
 import "./contact-form-process.php"
 import axios from 'axios';
 
-class Contact extends React.Component {
+class ContactFormForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -67,4 +67,4 @@ class Contact extends React.Component {
       }
     }
       
-      export default Contact;
+      export default ContactForm;
