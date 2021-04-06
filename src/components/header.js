@@ -21,27 +21,20 @@ const Header = ({ siteTitle }) => (
           <p>Matthew Davenport</p>
           <p>Developer and Designer</p>
         </div>
-        <div className="x-icon">
-          <FontAwesomeIcon icon={ faTimes } style={{ color: '#C4C4C4', fontSize:'20px', fontWeight:'0px', display:'inline-block'}}/>  
-        </div>
       </div>
       
       
       
       <div className="icons-container">
-            <a href="mailto:someone@yoursite.com">
+            <a href="mailto:matt@matthewdavenport.com.au">
               <MailSVG />
             </a>
 
-            <a href="https://www.instagram.com/">
-              <InstagramSVG />
-            </a>
-
-            <a href="https://www.linkedin.com/">
+            <a href="https://www.linkedin.com/in/matthew-davenport-b536a210b/">
               <LinkedInSVG />
             </a>
 
-            <a href="https://github.com/">
+            <a href="https://github.com/mattdav30">
               <GithubSVG />
             </a>
       </div>
