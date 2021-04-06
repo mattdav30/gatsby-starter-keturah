@@ -36,6 +36,9 @@ class Bio extends React.Component  {
                     <p>I also have experience growing large social media audiences and executing digital campaign strategies. I have experience in creating and sending email campaigns to over 1 Million individuals, and serving digital ads and content to similar audiences. </p>
                   <p>&#125;</p>
                 </li>
+                <div className="about-image-container">
+                <img src={picture} /> 
+                </div>
                 <li>
                   <p><span style={{ color: "#94D381"}}>.skills</span> &#123; </p>
                     <p className="tag-info">Web: HTML;</p>
@@ -50,10 +53,6 @@ class Bio extends React.Component  {
                   <p>&#125;</p>
                 </li>
               </ul>
-
-              <div className="about-image-container">
-                <img src={picture} /> 
-              </div>
 
             </div>  
                      
