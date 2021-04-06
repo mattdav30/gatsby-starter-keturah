@@ -1,54 +1,72 @@
 import React from "react"
 import Header from "../components/header"
-import "./contact-form.css"
 import "./contact-form-process.php"
+import axios from 'axios';
 
-class Contact extends React.Component  {
-  render(){
-    return(                
-        <body>
-        
-        <div class="fcf-body">
-        
-            <div id="fcf-form">
-            <h3 class="fcf-h3">Contact us</h3>
-        
-            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                
-                <div class="fcf-form-group">
-                    <label for="Name" class="fcf-label">Your name</label>
-                    <div class="fcf-input-group">
-                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                    </div>
-                </div>
-        
-                <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your email address</label>
-                    <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                    </div>
-                </div>
-        
-                <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
-                    <div class="fcf-input-group">
-                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                    </div>
-                </div>
-        
-                <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-                </div>
-        
-            </form>
-            </div>
-        
-        </div>
-        
-        </body>
-        )
+class Contact extends React.Component {
+  
+    constructor(props) {
+      super(props);
+      this.state = {
+        name: '',
+        email: '',
+        message: ''
+      }
+    }
+  
+    handleSubmit(e){
+      e.preventDefault();
+      axios({
+        method: "POST", 
+        url:"http://localhost:3002/send", 
+        data:  this.state
+      }).then((response)=>{
+        if (response.data.status === 'success') {
+          alert("Message Sent."); 
+          this.resetForm()
+        } else if (response.data.status === 'fail') {
+          alert("Message failed to send.")
+        }
+      })
+    }
+  
+    resetForm(){
+      this.setState({name: ‘’, email: ‘’, message: ‘’})
+    }
     
+    render() {
+      return(
+        <div className="Contact">
+          <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+            <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+            </div>
+            <div className="form-group">
+                <label htmlFor="exampleInputEmail1">Email address</label>
+                <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+            </div>
+            <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+            </div>
+            <button type="submit" className="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      );
+    }
+  
+    onNameChange(event) {
+        this.setState({name: event.target.value})
+    }
+  
+    onEmailChange(event) {
+        this.setState({email: event.target.value})
+    }
+  
+    onMessageChange(event) {
+        this.setState({message: event.target.value})
     }
   }
   
-  export default Bio
+  export default Contact;
