@@ -50,7 +50,7 @@ class Nav extends React.Component  {
         <div className="folder-name-container">
             <FontAwesomeIcon icon={ faAngleDown } style={{ color: '#C4C4C4', fontSize:'25px'}}/> &nbsp;&nbsp;
             <FontAwesomeIcon icon={ faFolder } style={{ color: '#536579', fontSize:'30px'}}/> &nbsp;
-            <p>Keturah Portfolio Site</p>
+            <p>Matthew Davenport Portfolio Site</p>
         </div>
 
         <div className="navbar-pages-container">

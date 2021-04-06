@@ -91,29 +91,7 @@ class Terminal extends Component {
           </div>
         </Delay>
         
-        <Delay wait={7000}>
-          <div className="row">
-            <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
-            <Typist 
-              cursor={{ hideWhenDone: true }}
-            >
-              {description_list[1]}
-            </Typist>
-          </div>
-        </Delay>
-        
-        <Delay wait={8000}>
-          <div className="row">
-            <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
-            <Typist 
-              cursor={{ hideWhenDone: true }}
-            >
-              {description_list[2]}
-            </Typist>
-          </div>
-        </Delay>
-        
-        <Delay wait={9000}>
+        <Delay wait={2000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
             Sign In (Yes / No): &nbsp;
