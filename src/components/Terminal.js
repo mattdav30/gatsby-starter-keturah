@@ -58,7 +58,7 @@ class Terminal extends Component {
           </Typist>
         </div>
         
-        <Delay wait={3000}>
+        <Delay wait={1000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
             <Typist 
@@ -69,7 +69,7 @@ class Terminal extends Component {
           </div>
         </Delay>
         
-        <Delay wait={6000}>
+        <Delay wait={2000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
             <Typist 
@@ -80,7 +80,7 @@ class Terminal extends Component {
           </div>
         </Delay>
         
-        <Delay wait={10000}>
+        <Delay wait={5000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
             <Typist 
@@ -91,7 +91,7 @@ class Terminal extends Component {
           </div>
         </Delay>
         
-        <Delay wait={14000}>
+        <Delay wait={7000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
             <Typist 
@@ -102,7 +102,7 @@ class Terminal extends Component {
           </div>
         </Delay>
         
-        <Delay wait={19000}>
+        <Delay wait={8000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
             <Typist 
@@ -113,7 +113,7 @@ class Terminal extends Component {
           </div>
         </Delay>
         
-        <Delay wait={23000}>
+        <Delay wait={9000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
             Sign In (Yes / No): &nbsp;

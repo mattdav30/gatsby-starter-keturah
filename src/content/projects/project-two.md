@@ -1,7 +1,7 @@
 ---
-type: "App Redesign"
-title: "Instagram Redesign"
-description: "Conducted research to determine how Instagram could improve their user experience, introduce new features and rebrand themselves."
-tools: "Figma Sketch InVision Flutter Swift C#" 
+type: "Example Website"
+title: "Liberal National Party Site"
+description: "Conducted the redesign and improvement of the Liberal National Party Website. Created a more user-specific layout"
+tools: "Wordpress HTML Javascript CSS" 
 image: "../../images/demo-pic.jpg"
 ---

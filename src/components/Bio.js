@@ -25,12 +25,15 @@ class Bio extends React.Component  {
               <ul className="about-list">
                 <li>
                   <p><span style={{ color: "#FF97FF"}}>.name</span> &#123; </p>
-                    <p className="tag-info">Morgan MacGregor</p>
+                    <p className="tag-info">Matthew Davenport</p>
                   <p>&#125;</p>
                 </li>
                 <li>
                   <p><span style={{ color: "#86FFF8"}}>.bio</span> &#123; </p>
-                    <p className="tag-info">I am from New York, where she I work as a senior web engineer at Flywheel, WordPress hosting for creatives. I has 6 years of experience as a Full Stack engineer with a focus on APIs and creating responsive sites. In my spare time you can find me listening to true-crime podcasts, skateboarding in Prospect Park or teaching a spin class. </p>
+                    <p className="tag-info"> I am currently attending the University of Queensland studying a Bachelor's Degree in IT (BInfTech) Majoring in User Experience Design. </p>
+                    <p>My expertise lies in User Experience Design, this includes prototyping, wireframes, front-end design, research and general design. Apart from technical digital work, I have a keen interest working with others. I have experience in customer service, administration and general office duties. </p>
+                    <p>I am proficient in using Wordpress and Squarespace, the Adobe Suite, filming, video editing, designing and creating graphics, and creating digital content. </p>
+                    <p>I also have experience growing large social media audiences and executing digital campaign strategies. I have experience in creating and sending email campaigns to over 1 Million individuals, and serving digital ads and content to similar audiences. </p>
                   <p>&#125;</p>
                 </li>
                 <li>
@@ -40,7 +43,10 @@ class Bio extends React.Component  {
                     <p className="tag-info">Web: Javascript;</p>
                     <p className="tag-info">Framework: React;</p>
                     <p className="tag-info">Framework: Nodejs;</p>
-                    <p className="tag-info">Cloud Platform: Heroku;</p>
+                    <p className="tag-info">Design: Adobe Suite;</p>
+                    <p className="tag-info">Other: Social Media;</p>
+                    <p className="tag-info">Other: SEO and web analytics</p>
+                    <p className="tag-info">Other: Email campaigns and audience growth</p>
                   <p>&#125;</p>
                 </li>
               </ul>
