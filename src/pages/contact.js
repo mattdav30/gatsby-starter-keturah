@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import SEO from "../components/seo"
 import Nav from "../components/Nav"
-import Contact from "../components/Contact"
+import ContactForm from "../components/ContactForm"
 
 class Contact extends Component {
   constructor() {
@@ -26,7 +26,7 @@ class Contact extends Component {
         return(
           <div className="contact-page">
             <SEO title="Contact" />
-            <Main />
+            <ContactForm />
           </div>
         );
       }
@@ -35,7 +35,7 @@ class Contact extends Component {
           <div className="contact-page">
             <SEO title="Contact" />
             <Nav />
-            <Main />
+            <ContactForm />
           </div>
         );
       }

@@ -2,7 +2,7 @@ import React from "react"
 import "./contact-form-process.php"
 import axios from 'axios';
 
-class ContactFormForm extends React.Component {
+class Contact extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,7 +16,7 @@ class ContactFormForm extends React.Component {
         e.preventDefault();
         axios({
           method: "POST", 
-          url:"http://localhost:3002/send", 
+          url:"https://friendly-villani-dd3719.netlify.app/contact", 
           data:  this.state
         }).then((response)=>{
           if (response.data.status === 'success') {
@@ -67,4 +67,4 @@ class ContactFormForm extends React.Component {
       }
     }
       
-      export default ContactForm;
+      export default Contact;
